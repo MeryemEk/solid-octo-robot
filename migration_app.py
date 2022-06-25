@@ -7,7 +7,7 @@ import data_munging
 import plot_migration
 
 padding = 0
-st.set_page_config(page_title="Migration Network", layout="wide", page_icon="📍")
+st.set_page_config(page_title="TAFRA SMIG DATA", layout="wide", page_icon="📍")
 
 st.markdown(
     """
@@ -52,17 +52,10 @@ with st.sidebar.form(key="my_form"):
     )
     pressed = st.form_submit_button("Build Migration Map")
 
-expander = st.sidebar.expander("What is this?")
+expander = st.sidebar.expander("Qu'est ce que l'indice SMIG DATA")
 expander.write(
     """
-This app allows users to view migration between states from 2018-2019.
-Overall US plots all states with substantial migration-based relationships with other states.
-Any other option plots only migration from or to a given state. This map will be updated
-to show migration between 2019 and 2020 once new census data comes out :) 
-
-Incoming: Shows for a given state, the percent of their **total inbound migration from** another state
-
-Outgoing: Shows for a given staet, the percent of their **total outbound migration to** another state
+L'indice SMIG DATA a été développé par TAFRA pour évaluer la conformité des communes marocaines au Droit d'Accès à l'Information.
 """
 )
 
